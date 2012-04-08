@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Root Asus Transformer : How to root Asus transformer TF101/TF201 3.x and 4.0.x " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Root Asus Transformer</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/lomoussw/Root-Asus-Transformer">Fork Me on GitHub</a>
+
+          <h1 id="project_title">Root Asus Transformer</h1>
+          <h2 id="project_tagline">How to root Asus transformer TF101/TF201 3.x and 4.0.x </h2>
+
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/lomoussw/Root-Asus-Transformer/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/lomoussw/Root-Asus-Transformer/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>Root/Restore Instructions - Asus Transformer</h3>
+
+<p>You can find two sections to root your tablet. To find your android version, go to settings on your tablet,  about section and find your Android Version.</p>
+
+<ul>
+<li><strong>Requierement</strong></li>
+</ul><p>For all version of your Asus Transformer, you must have Android SDK tools installed
+Download ANDROID SDK ( <a href="http://developer.android.com/sdk/index.html">http://developer.android.com/sdk/index.html</a> )</p>
+
+<ul>
+<li><strong>Install tools from ANDROID SDK</strong></li>
+</ul><p>Go to your android-sdk directory and tools</p>
+
+<p>On Mac OS X ( and other Unix platform ):</p>
+
+<p>Install android tools 
+<code>
+./android 
+( select tools and install )
+</code></p>
+
+<p>On Windows:
+Simply double click on android file, select tools and install.</p>
+
+<h3>Unroot/Restore Asus Transformer</h3>
+
+<p>These instructions is the easiest way to unroot and restore your Asus Transformer.
+At this time, it just work under Windows.</p>
+
+<ul>
+<li><strong>Requierement</strong></li>
+</ul><p>Download project archive into zip or tar.gz format. This archive content <em>nvFlashWW</em> directory.
+Your tablet must not be plug to your computer at beginning.</p>
+
+<ul>
+<li><strong>Unroot/Restore your tablet</strong></li>
+</ul><p>Start your Asus Transformer by pushing power button and Volume ( + ) during 8 seconds;
+Your screen staying black, it's normal.</p>
+
+<p>Plug it to your computer. Windows automatically detect your tablet.
+If Windows notify that it can't install driver, go to "Driver Manager", select "Update driver on APX device". Then select update from computer and select <em>nvFlashWW/usbpcdriver</em>  directory, check "find in subdirectories".</p>
+
+<p>Go to <em>nvFlashWW</em> directory and launch <em>download</em> bat file. 
+Waiting reboot.</p>
+
+<p>You have restored your tablet.</p>
+
+<h3>Root Version TF101/TF201 (Prime) v4.0.x</h3>
+
+<p>These instructions is the easiest way to root Asus Transformer for Android 4.0.x. 
+If you have an android version in 3.x got to <em>Version TF101 3.x</em> section or upgrade your tablet to android 4.0.x.
+It just work under Windows operating system.</p>
+
+<ul>
+<li><strong>Requierement</strong></li>
+</ul><p>Download project archive into zip or tar.gz format. This archive content <em>viperMOD PrimeTime v4.5</em> directory.</p>
+
+<p>Your tablet must not be plug to your computer at beginning.</p>
+
+<ul>
+<li><strong>Root your tablet</strong></li>
+</ul><p>Start your Asus Transformer by pushing power button and Volume ( + ) during 8 seconds;
+Your screen staying black, it's normal.</p>
+
+<p>Plug it to your computer. Windows automatically detect your tablet.
+If Windows notify that it can't install driver, go to "Driver Manager", select "Update driver on APX device". Then select update from computer and select <em>viperMOD PrimeTime v4.5/usbpcdriver</em>  directory, check "find in subdirectories".</p>
+
+<p>After drivers installed, go to <em>viperMOD PrimeTime v4.5</em> and launch <em>viperMOD PrimeTime v4.5</em> executable.</p>
+
+<p>Select correct option ( must be option 1 ).</p>
+
+<p>Follow instructions ( just press any key to continue at each step ).</p>
+
+<p>When your Asus Transformer is rebooted, your tablet must be rooted. </p>
+
+<ul>
+<li><strong>Finally</strong></li>
+</ul><p>Download superUser and Voodoo OTA RootKeeper from market to test root and activate it.
+Voodoo OTA RootKeeper allow to backup root mode and activate or desactivate root mode to do some update.
+Maybe you could wait some minutes during Android activate it.</p>
+
+<h3>Root Version TF101 3.x</h3>
+
+<p>These instructions is the easiest way to root Asus Transformer for Android 3.x. 
+This not work on Android 4.x</p>
+
+<p>Download project archive into zip or tar.gz format. This archive content <em>nachoroot.bin</em> and <em>su</em> script.</p>
+
+<ul>
+<li>
+<strong>Root your tablet</strong>
+Go to android-sdk directory and platform-tools</li>
+</ul><pre><code>adb push nachoroot.bin /data/local/  
+</code></pre>
+
+<p><strong>You must specify the path where you have downloaded the project archive.</strong>
+<strong>Example : adb push /Users/your_name/Desktop/nachoroot.bin /data/local/</strong></p>
+
+<pre><code>adb shell chmod 777 /data/local/nachoroot.bin
+adb shell /data/local/nachoroot.bin --stage1
+adb reboot
+</code></pre>
+
+<p><strong>Wait during your tablet is rebooting</strong></p>
+
+<pre><code>adb shell /data/local/nachoroot.bin --stage2
+adb reboot
+</code></pre>
+
+<p><strong>Wait during your tablet is rebooting</strong></p>
+
+<pre><code>adb shell id
+</code></pre>
+
+<p><strong>If id is different to 0, start over root instructions</strong></p>
+
+<pre><code>adb remount
+adb  push  su  /system/xbin/su
+</code></pre>
+
+<p><strong>You must specify the path where you have downloaded the project archive.</strong>
+<strong>Example : adb push /Users/your_name/Desktop/su /system/xbin/su</strong></p>
+
+<pre><code>adb shell chown 0.0 /system/xbin/su
+adb shell chmod 06755 /system/xbin/su
+adb shell /data/local/nachoroot.bin --undo
+adb reboot
+</code></pre>
+
+<p><strong>Wait during your tablet is rebooting</strong></p>
+
+<ul>
+<li><strong>Finally</strong></li>
+</ul><p>Download superUser and Voodoo OTA RootKeeper from market to test root and activate it.
+Voodoo OTA RootKeeper allow to backup root mode and activate or desactivate root mode to do some update.
+Maybe you could wait some minutes during Android activate it.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Root Asus Transformer maintained by <a href="https://github.com/lomoussw">lomoussw</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
